@@ -11,5 +11,12 @@ internal class Program
         achat1.Afficherdetails();
         achat2.Afficherdetails();
         achat3.Afficherdetails();
+
+        Paypal transaction1 = new Paypal(500, "Stok'x", "jean@gmail.com");
+        Paypal transaction2 = new Paypal(1000, "Apple", "christ@gmail.com");
+
+        transaction1.Afficherdetails();
+        transaction2.Afficherdetails();
+
     }
 }
