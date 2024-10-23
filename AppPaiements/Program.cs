@@ -18,5 +18,11 @@ internal class Program
         transaction1.Afficherdetails();
         transaction2.Afficherdetails();
 
+        Utilisateur utilisateur = new("christ");
+        utilisateur.AjouterPaiement(new Paypal(300, "zara", "yvan@gmail.com"));
+        utilisateur.AjouterPaiement(new CarteCredit(400, "epicerie", 4567));
+
+        utilisateur.AfficherInfo();
+
     }
 }
